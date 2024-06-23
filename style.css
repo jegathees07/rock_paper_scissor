@@ -1,0 +1,117 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color:white;
+    color: black;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+h1{
+    text-align: center;
+    margin: auto;
+}
+.gameImages img{
+    width: 4.6rem;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+#rock{
+    border: 6px solid rgb(97, 253, 50);
+    box-shadow: 5px 5px 5px rgba(121, 121, 121, 0.623);
+}
+#paper{
+    border: 6px solid rgb(76, 0, 255);
+    box-shadow: 5px 5px 5px rgba(121, 121, 121, 0.623);
+}
+
+#scissor{
+    border: 6px solid rgba(255, 0, 0, 0.904);
+    box-shadow: 5px 5px 5px rgba(121, 121, 121, 0.623);
+}
+.score2{
+    float: right;
+    margin-right: 20px;
+}
+.score1{
+    margin: 20px;
+}
+#gameover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    margin-top: 270px;
+}
+.win{
+    color:  rgb(97, 253, 50);
+}
+.lose{
+    color: rgba(255, 0, 0, 0.904) ;
+}
+.tie{
+    color: rgb(76, 0, 255);
+}
+#resultDisplay{
+    font-size: 30px;
+    font-weight: 900;
+}
+#playerChoose,#computerChoose{
+    color:rgb(255, 187, 0);
+}
+#rock:active{
+    border: 6px solid black;
+}
+#paper:active{
+    border: 6px solid black;
+}
+#scissor:active{
+    border: 6px solid black;
+}
+h3{
+    font-size: 20px;
+}
+b{
+    font-size: 20px;
+}
+#my-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+#playAgain{
+    padding: 6px 20px;
+    background-color: white;
+    border: 2px solid black;
+}
+@media(max-width:460px){
+    .gameImages img{
+        width: 12%;
+    }
+    #last{
+        margin-top: -180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #my-image img{
+        width: 200px;
+        gap: 50px;
+    }
+    #my-image{
+        margin-top: 300px;
+    }
+}
